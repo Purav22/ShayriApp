@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#1f1f1d">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/second2_line"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/red_line"
+            android:layout_toLeftOf="@+id/first_line"/>
+        <View
+            android:id="@+id/third2_line"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/white_line"
+            android:layout_toLeftOf="@+id/second2_line"/>
+
+        <View
+            android:id="@+id/four2_line"
+            android:layout_width="20dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/red_line"
+            android:layout_toLeftOf="@+id/third2_line"/>
+
+        <View
+            android:id="@+id/five2_line"
+            android:layout_width="20dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/four2_line"
+            android:background="@drawable/green_line" />
+
+        <View
+            android:id="@+id/six2_line"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/red_line"
+            android:layout_toLeftOf="@+id/five2_line"/>
+
+         <View
+             android:id="@+id/first_line"
+             android:layout_width="20dp"
+             android:layout_height="200dp"
+             android:background="@drawable/white_line"
+             android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/second_line"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/first_line"
+            android:background="@drawable/red_line" />
+
+        <View
+            android:id="@+id/third_line"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_line"
+            android:layout_toRightOf="@+id/second_line"/>
+
+        <View
+            android:id="@+id/four_line"
+            android:layout_width="20dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/red_line"
+            android:layout_toRightOf="@+id/third_line"/>
+
+        <View
+            android:id="@+id/five_line"
+            android:layout_width="20dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/green_line"
+            android:layout_toRightOf="@+id/four_line"/>
+
+        <View
+            android:id="@+id/six_line"
+            android:layout_width="20dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/red_line"
+            android:layout_toRightOf="@+id/five_line"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="center"
+            android:text="All Shayri 2021"
+            android:textColor="#fff"
+            android:textSize="80sp" />
+    </RelativeLayout>
+    
+
+
+</LinearLayout>
