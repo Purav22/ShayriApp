@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">All Shayri 2021</string>
     <string name="banner_ad_unit">ca-app-pub-9049756335537342/6221190897</string>
+    <string name="InterstitialAds">ca-app-pub-9049756335537342/3507800596</string>
 
     <string-array name="title">
         <item>Good morning shayri</item>

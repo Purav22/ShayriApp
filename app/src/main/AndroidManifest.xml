@@ -9,9 +9,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo1"
+        android:icon="@drawable/logo2"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo1"
+        android:roundIcon="@drawable/logo2"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllShayri2021"
         tools:replace="android:appComponentFactory"

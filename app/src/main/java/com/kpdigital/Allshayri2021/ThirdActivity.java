@@ -1,18 +1,24 @@
 package com.kpdigital.Allshayri2021;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 //import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class ThirdActivity extends AppCompatActivity {
 
@@ -20,7 +26,7 @@ public class ThirdActivity extends AppCompatActivity {
     String[] str;
     ListView second_list;
     AdView mAdView;
-//    private InterstitialAd mInterstitialAd;
+
 
 
     @Override
@@ -30,8 +36,16 @@ public class ThirdActivity extends AppCompatActivity {
 
         second_list = findViewById(R.id.second_list);
 
-        mAdView = findViewById(R.id.adView);
+        //full page ad
+
         AdRequest adRequest = new AdRequest.Builder().build();
+
+
+
+
+
+        mAdView = findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
         mAdView.setAdListener(new AdListener() {
